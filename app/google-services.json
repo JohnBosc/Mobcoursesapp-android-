@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "573436001713",
+    "firebase_url": "https://mobilecoursesapp.firebaseio.com",
+    "project_id": "mobilecoursesapp",
+    "storage_bucket": "mobilecoursesapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:573436001713:android:ec7bd9864bea9bf9",
+        "android_client_info": {
+          "package_name": "com.finalyear.mobcoursesapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "573436001713-trp46206lpn1vdhde0hqsba51gqa6cpf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.finalyear.mobcoursesapp",
+            "certificate_hash": "228380b2040b382d4c1dc1f11f05f2be2ac9595e"
+          }
+        },
+        {
+          "client_id": "573436001713-j5nmstkthu2159vh3nqnlvqn80hmge5i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXUQ4oMvjOo4h2YCOxSfJfYC6_QSH17eg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "573436001713-j5nmstkthu2159vh3nqnlvqn80hmge5i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

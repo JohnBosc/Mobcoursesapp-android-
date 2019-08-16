@@ -1,0 +1,37 @@
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<vector xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:width="42dp"-->
+    <!--android:height="42dp"-->
+    <!--android:viewportWidth="500"-->
+    <!--android:viewportHeight="500">-->
+
+    <!--<path-->
+        <!--android:fillColor="#3b5998"-->
+        <!--android:pathData="M 15 0 L 497 0 Q 512 0 512 15 L 512 497 Q 512 512 497 512 L 15 512 Q 0 512 0 497 L 0 15 Q 0 0 15 0 Z" />-->
+    <!--<path-->
+        <!--android:fillColor="#fff"-->
+        <!--android:pathData="M330 512V322h64l9-74h-73v-47c0-22 6-36 37-36h39V99c-7-1-30-3-57-3-57 0-95 34-95-->
+<!--98v54h-64v74h64v190z" />-->
+<!--</vector>-->
+
+<!--<vector xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:width="42dp"-->
+    <!--android:height="42dp"-->
+    <!--android:viewportHeight="500"-->
+    <!--android:viewportWidth="500">-->
+    <!--<path-->
+        <!--android:fillColor="@color/white"-->
+        <!--android:pathData="M353.7,0H55.1C24.7,0 0,24.7 0,55.1v298.6c0,30.4 24.7,55.1 55.1,55.1h147.3l0.3,-146.1h-38c-4.9,0 -8.9,-4 -9,-8.9l-0.2,-47.1c-0,-5 4,-9 9,-9h37.9v-45.5c0,-52.8 32.2,-81.6 79.3,-81.6h38.7c4.9,0 9,4 9,9v39.7c0,4.9 -4,9 -8.9,9l-23.7,0c-25.6,0 -30.6,12.2 -30.6,30v39.4h56.3c5.4,0 9.5,4.7 8.9,10l-5.6,47.1c-0.5,4.5 -4.4,7.9 -8.9,7.9h-50.5l-0.3,146.1h87.6c30.4,0 55.1,-24.7 55.1,-55.1V55.1C408.8,24.7 384.1,0 353.7,0z" />-->
+<!--</vector>-->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="21dp"
+    android:height="30dp"
+    android:viewportWidth="11.0"
+    android:viewportHeight="20.0">
+    <path
+        android:pathData="M6.54,20L6.54,10.877L9.488,10.877L9.929,7.322L6.54,7.322L6.54,5.052C6.54,4.022 6.815,3.321 8.236,3.321L10.049,3.32L10.049,0.14C9.735,0.097 8.659,0 7.407,0C4.794,0 3.005,1.657 3.005,4.7L3.005,7.322L0.049,7.322L0.049,10.877L3.005,10.877L3.005,20L6.54,20Z"
+        android:strokeWidth="1"
+        android:fillColor="#FFFFFF"
+        android:strokeColor="#00000000"/>
+</vector>

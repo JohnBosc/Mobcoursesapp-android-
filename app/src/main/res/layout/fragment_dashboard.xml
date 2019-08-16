@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title_dashboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/comfortaa"
+                android:text="My Dashboard"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/lightGrey"
+                android:textSize="30sp" />
+
+            <RelativeLayout
+                android:id="@+id/enrolled_courses"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:paddingVertical="20dp">
+
+                <ImageView
+                    android:id="@+id/enrolled_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="10dp"
+                    app:srcCompat="@drawable/ic_enrolled_24dp" />
+
+                <TextView
+                    android:id="@+id/label_dashboard1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/enrolled_label"
+                    android:fontFamily="@font/comfortaa"
+                    android:text="Enrolled Courses"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/label_dashboard1"
+                    android:layout_toRightOf="@id/enrolled_label"
+                    android:fontFamily="@font/comfortaa"
+                    android:text="0"
+                    android:textColor="@color/colorJaune"
+                    android:textSize="30sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/completed_courses"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:paddingVertical="20dp">
+
+                <ImageView
+                    android:id="@+id/completed_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="10dp"
+                    app:srcCompat="@drawable/ic_completed_24dp" />
+
+                <TextView
+                    android:id="@+id/label_dashboard2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/completed_label"
+                    android:fontFamily="@font/comfortaa"
+                    android:text="Completed Courses"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/label_dashboard2"
+                    android:layout_toRightOf="@id/completed_label"
+                    android:fontFamily="@font/comfortaa"
+                    android:text="0"
+                    android:textColor="#10A650"
+                    android:textSize="30sp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/tutorial_courses"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:paddingVertical="20dp">
+
+                <ImageView
+                    android:id="@+id/tutorial_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="10dp"
+                    app:srcCompat="@drawable/ic_assignment_24dp" />
+
+                <TextView
+                    android:id="@+id/label_dashboard3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tutorial_label"
+                    android:fontFamily="@font/comfortaa"
+                    android:text="Assignments &amp; Tuts"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/assignment_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/label_dashboard3"
+                    android:layout_toRightOf="@id/tutorial_label"
+                    android:fontFamily="@font/comfortaa"
+                    android:paddingRight="10dp"
+                    android:text="0"
+                    android:textColor="#0094C9"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/label_dashboard3"
+                    android:layout_marginVertical="7dp"
+                    android:layout_toRightOf="@id/assignment_number"
+                    android:background="@drawable/course_circle"
+                    android:fontFamily="@font/comfortaa"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="3dp"
+                    android:text="View assigments"
+                    android:textColor="#0094C9" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginVertical="10dp"-->
+            <!--android:fontFamily="@font/comfortaa"-->
+            <!--android:text="Designed by Jean Mengue"-->
+            <!--android:textColor="@color/lightGrey"-->
+            <!--android:textSize="8sp" />-->
+
+    </RelativeLayout>
+
+</ScrollView>
