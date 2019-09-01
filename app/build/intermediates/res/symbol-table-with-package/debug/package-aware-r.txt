@@ -1036,6 +1036,7 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
+drawable border
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -1119,6 +1120,7 @@ drawable ic_pdf_file
 drawable ic_perm_identity_black_24dp
 drawable ic_person_black_24dp
 drawable ic_person_grey_24dp
+drawable ic_phone_grey_24dp
 drawable ic_power_settings_new_black_24dp
 drawable ic_school_black_24dp
 drawable ic_schools_24dp
@@ -1252,6 +1254,7 @@ id forever
 id fragment_container
 id fullname
 id ghost_view
+id goToSignUp
 id gone
 id group_divider
 id groups
@@ -1299,6 +1302,7 @@ id more_pdf
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
+id name
 id nav_certifs
 id nav_dashboard
 id nav_help
@@ -1328,8 +1332,8 @@ id parallax
 id parent
 id parentPanel
 id parent_matrix
-id pass
 id pass_modify_label
+id password
 id pdf_icon
 id percent
 id phone
@@ -1374,6 +1378,8 @@ id showTitle
 id signin_progressbar
 id signinbtn
 id signinbutton
+id signinemail
+id signinpassword
 id signup
 id signup_backtointro
 id signup_progressbar
@@ -1441,7 +1447,6 @@ id user_setting_email
 id user_setting_matricule
 id user_setting_name
 id user_settings
-id useremail
 id view_offset_helper
 id visible
 id wide
@@ -1662,6 +1667,9 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string pref_file
+string pref_login_status
+string pref_user_name
 string project_id
 string registration_failed
 string registration_success

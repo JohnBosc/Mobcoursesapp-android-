@@ -23,6 +23,7 @@ public class CatalogFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
+        View view = inflater.inflate(R.layout.fragment_catalog, container, false);
 
         lstCourse = new ArrayList<>();
         lstCourse.add(new Course("The course 1", "The category 1", "Description 1", R.drawable.course1));
@@ -48,7 +49,7 @@ public class CatalogFragment extends Fragment {
 //        myrv.setAdapter(myAdapter);
 
 
-        return inflater.inflate(R.layout.fragment_catalog, null);
+        return view;
 
 
     }

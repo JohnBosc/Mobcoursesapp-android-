@@ -2,10 +2,12 @@ package com.finalyear.mobcoursesapp.Authentication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -21,22 +23,34 @@ public class Signin extends AppCompatActivity {
 
     private ImageView backtointro;
     private TextView resetPassword;
-
-    static final int GOOGLE_SIGN = 123;
+    private TextView RegText;
+    private EditText UserEmail, UserPassword;
     Button btn_login;
     ProgressBar progressBar;
-    GoogleSignInClient mGoogleSignInClient;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signin);
 
-
         progressBar = findViewById(R.id.signin_progressbar);
         btn_login = findViewById(R.id.signinbtn);
         backtointro = (ImageView) findViewById(R.id.backtointro);
         resetPassword = (TextView) findViewById(R.id.resetPass);
+        RegText = (TextView) findViewById(R.id.goToSignUp);
+        UserEmail = findViewById(R.id.signinemail);
+        UserPassword = findViewById(R.id.signinpassword);
+
+
+        RegText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Signin.this, Signup.class);
+                startActivity(intent);
+            }
+        });
 
         // [START back_to_intro_page]
         backtointro.setOnClickListener(new View.OnClickListener() {
@@ -47,12 +61,12 @@ public class Signin extends AppCompatActivity {
         });
         // [END back_to_intro_page]
 
-        btn_login.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                OpenLogin();
-            }
-        });
+//        btn_login.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                OpenLogin();
+//            }
+//        });
 
 
         // [START reset_password_activity]
@@ -63,6 +77,12 @@ public class Signin extends AppCompatActivity {
             }
         });
 
+    }
+
+    public void OnLogin(View view)
+    {
+        String useremail = UserEmail.getText().toString();
+        String userpassword = UserPassword.getText().toString();
     }
 
     // [START back_to_intro_function]
@@ -80,12 +100,12 @@ public class Signin extends AppCompatActivity {
     }
     // [END reset_password_activity]
 
-    // [START reset_password_function]
-    public void OpenLogin() {
-        Intent intent = new Intent(this, BottomNav.class);
-        startActivity(intent);
-    }
-    // [END reset_password_activity]
 
+//    // [START reset_password_function]
+//    public void OpenLogin() {
+//        Intent intent = new Intent(this, BottomNav.class);
+//        startActivity(intent);
+//    }
+//    // [END reset_password_activity]
 
 }

@@ -1,10 +1,8 @@
 package com.finalyear.mobcoursesapp.ui;
 
 import android.annotation.SuppressLint;
-import android.content.Intent;
 import android.os.Bundle;
 
-import com.finalyear.mobcoursesapp.Authentication.Signin;
 import com.finalyear.mobcoursesapp.ui.fragments.CatalogFragment;
 import com.finalyear.mobcoursesapp.ui.fragments.DashboardFragment;
 import com.finalyear.mobcoursesapp.ui.fragments.HelpFragment;
