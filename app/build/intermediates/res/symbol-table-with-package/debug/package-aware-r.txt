@@ -1197,6 +1197,7 @@ id barrier
 id beginning
 id blocking
 id bottom
+id btn_login
 id buttonPanel
 id cancel_action
 id center
@@ -1376,10 +1377,7 @@ id showCustom
 id showHome
 id showTitle
 id signin_progressbar
-id signinbtn
 id signinbutton
-id signinemail
-id signinpassword
 id signup
 id signup_backtointro
 id signup_progressbar

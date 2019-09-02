@@ -96,7 +96,7 @@
                     android:text="E-mail" />
 
                 <EditText
-                    android:id="@+id/signinemail"
+                    android:id="@+id/email"
                     android:layout_width="340dp"
                     android:layout_centerHorizontal="true"
                     android:layout_height="40dp"
@@ -142,7 +142,7 @@
                     app:passwordToggleEnabled="true">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/signinpassword"
+                        android:id="@+id/password"
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:layout_below="@id/label3"
@@ -172,7 +172,7 @@
                     android:layout_centerHorizontal="true"
                     android:layout_height="match_parent">
                 <Button
-                    android:id="@+id/signinbtn"
+                    android:id="@+id/btn_login"
                     android:layout_width="340dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="0dp"
@@ -191,8 +191,7 @@
                     android:id="@+id/resetPass"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/signinbtn"
-                    android:fontFamily="@font/comfortaa"
+                    android:layout_below="@id/btn_login"
                     android:textSize="11sp"
                     android:layout_centerHorizontal="true"
                     android:text="Forgot Your Password?"
@@ -205,7 +204,6 @@
                     android:layout_below="@id/resetPass"
                     android:layout_marginTop="10dp"
                     android:textStyle="bold"
-                    android:fontFamily="@font/comfortaa"
                     android:textSize="12sp"
                     android:layout_centerHorizontal="true"
                     android:text="New user? register now"

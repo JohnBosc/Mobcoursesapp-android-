@@ -1,4 +1,4 @@
-#Sun Sep 01 05:15:05 WAT 2019
+#Mon Sep 02 21:26:59 WAT 2019
 base.0=/home/jb/AndroidStudioProjects/mobcoursesapp/app/build/intermediates/transforms/dexMerger/debug/6
 path.0=classes.dex
 renamed.0=classes.dex

@@ -19,7 +19,6 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.finalyear.mobcoursesapp.R;
-import com.finalyear.mobcoursesapp.entities.Student;
 import com.finalyear.mobcoursesapp.ui.BottomNav;
 import com.finalyear.mobcoursesapp.ui.MainActivity;
 
@@ -96,11 +95,11 @@ public class Signup extends AppCompatActivity {
 
                             if (success.equals("1")){
                                 Toast.makeText(Signup.this, "Sucessfully Register!", Toast.LENGTH_SHORT).show();
-                                Intent I = new Intent(Signup.this, BottomNav.class);
-                                startActivity(I);
+
+                                // Open BottomNav activity
+                                startActivity(new Intent(Signup.this, Signin.class));
+                                finish();
                             }
-
-
 
                         } catch (JSONException e) {
                             e.printStackTrace();

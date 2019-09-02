@@ -1,8 +1,11 @@
 package com.finalyear.mobcoursesapp.ui;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 
+import com.finalyear.mobcoursesapp.Authentication.Signin;
+import com.finalyear.mobcoursesapp.Utils.Session;
 import com.finalyear.mobcoursesapp.ui.fragments.CatalogFragment;
 import com.finalyear.mobcoursesapp.ui.fragments.DashboardFragment;
 import com.finalyear.mobcoursesapp.ui.fragments.HelpFragment;
@@ -34,14 +37,19 @@ public class BottomNav extends AppCompatActivity implements
 
     private ActionBarDrawerToggle toggle;
 
-
-
+    private Session session;
 
     @SuppressLint("RestrictedApi")
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bottomnav);
+
+
+        session = new Session(this);
+        if (!session.loggedIn()){
+            logout();
+        }
 
 
 //      App navigation drawer
@@ -72,6 +80,15 @@ public class BottomNav extends AppCompatActivity implements
         BottomNavigationView navView = findViewById(R.id.nav_view_bottom);
         navView.setOnNavigationItemSelectedListener(this);
 
+
+    }
+
+    private void logout() {
+        session.setLoggedIn(false);
+        finish();
+        startActivity(new Intent(BottomNav.this, Signin.class));
+        Toast.makeText(this, "Logged Out", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Sign In to continue", Toast.LENGTH_SHORT).show();
 
     }
 
@@ -142,8 +159,8 @@ public class BottomNav extends AppCompatActivity implements
                 break;
 
             case R.id.nav_logout:
-                Toast.makeText(this, "Logout", Toast.LENGTH_SHORT).show();
-            break;
+                logout();
+                break;
 
         }
 
