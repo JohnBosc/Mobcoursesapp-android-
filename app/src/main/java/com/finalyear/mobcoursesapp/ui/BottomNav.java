@@ -7,6 +7,7 @@ import android.os.Bundle;
 import com.finalyear.mobcoursesapp.Authentication.Signin;
 import com.finalyear.mobcoursesapp.Utils.Session;
 import com.finalyear.mobcoursesapp.ui.fragments.CatalogFragment;
+import com.finalyear.mobcoursesapp.ui.fragments.CourseFragment;
 import com.finalyear.mobcoursesapp.ui.fragments.DashboardFragment;
 import com.finalyear.mobcoursesapp.ui.fragments.HelpFragment;
 import com.finalyear.mobcoursesapp.ui.fragments.InfoFragment;
@@ -103,13 +104,14 @@ public class BottomNav extends AppCompatActivity implements
     }
 
 
-    private boolean loadFragment(Fragment fragment) {
+    public boolean loadFragment(Fragment fragment) {
 
         if (fragment != null) {
 
             getSupportFragmentManager()
                     .beginTransaction()
                     .replace(R.id.fragment_container, fragment)
+                    .addToBackStack(null)
                     .commit();
 
             return true;
@@ -130,6 +132,7 @@ public class BottomNav extends AppCompatActivity implements
                 fragment = new CatalogFragment();
                 break;
 
+
             case R.id.navigation_search:
                 fragment = new SearchFragment();
                 break;
@@ -138,25 +141,25 @@ public class BottomNav extends AppCompatActivity implements
                 fragment = new MyCoursesFragment();
                 break;
 
-            case R.id.navigation_info:
-                fragment = new InfoFragment();
-                break;
+//            case R.id.navigation_info:
+//                fragment = new InfoFragment();
+//                break;
 
             case R.id.nav_dashboard:
                 fragment = new DashboardFragment();
                 break;
 
-            case R.id.nav_help:
-                fragment = new HelpFragment();
-                break;
+//            case R.id.nav_help:
+//                fragment = new HelpFragment();
+//                break;
 
             case R.id.action_settings:
                 fragment = new SettingsFragment();
                 break;
 
-            case R.id.nav_share:
-                Toast.makeText(this, "Share", Toast.LENGTH_SHORT).show();
-                break;
+//            case R.id.nav_share:
+//                Toast.makeText(this, "Share", Toast.LENGTH_SHORT).show();
+//                break;
 
             case R.id.nav_logout:
                 logout();

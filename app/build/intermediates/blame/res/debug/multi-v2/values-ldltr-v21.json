@@ -4,7 +4,7 @@
             "outputFile": "/home/jb/AndroidStudioProjects/mobcoursesapp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ldltr-v21/values-ldltr-v21.xml",
             "map": [
                 {
-                    "source": "/home/jb/.gradle/caches/transforms-2/files-2.1/60fd73a0e376d2469487b168fc58bf5c/res/values-ldltr-v21/values-ldltr-v21.xml",
+                    "source": "/home/jb/.gradle/caches/transforms-2/files-2.1/0eafa942263d5a7c6b967b087f0d1403/res/values-ldltr-v21/values-ldltr-v21.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

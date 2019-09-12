@@ -5,56 +5,60 @@
     tools:showIn="navigation_view">
 
     <group android:checkableBehavior="none">
+        <!--<item-->
+            <!--android:id="@+id/nav_profile"-->
+            <!--android:icon="@drawable/ic_person_black_24dp"-->
+            <!--android:title="@string/menu_profile" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_help"-->
+            <!--android:icon="@drawable/ic_help_black_24dp"-->
+            <!--android:title="@string/menu_help" />-->
         <item
-            android:id="@+id/nav_profile"
-            android:icon="@drawable/ic_person_black_24dp"
-            android:title="@string/menu_profile" />
-        <item
-            android:id="@+id/nav_help"
-            android:icon="@drawable/ic_help_black_24dp"
-            android:title="@string/menu_help" />
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/ic_dashboard_black_24dp"
+            android:title="@string/menu_dashboard" />
         <item
             android:id="@+id/action_settings"
             android:icon="@drawable/ic_settings_black_24dp"
             android:title="@string/action_settings" />
     </group>
 
-    <item android:title="Achievements">
-        <menu>
-            <item
-                android:id="@+id/nav_dashboard"
-                android:icon="@drawable/ic_dashboard_black_24dp"
-                android:title="@string/menu_dashboard" />
-            <item
-                android:id="@+id/nav_certifs"
-                android:icon="@drawable/ic_verified_black_24dp"
-                android:title="@string/menu_certificates"
-                />
-        </menu>
-    </item>
+    <!--<item android:title="Achievements">-->
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:id="@+id/nav_dashboard"-->
+                <!--android:icon="@drawable/ic_dashboard_black_24dp"-->
+                <!--android:title="@string/menu_dashboard" />-->
+            <!--<item-->
+                <!--android:id="@+id/nav_certifs"-->
+                <!--android:icon="@drawable/ic_verified_black_24dp"-->
+                <!--android:title="@string/menu_certificates"-->
+                <!--/>-->
+        <!--</menu>-->
+    <!--</item>-->
 
-    <item android:title="Partners">
-        <menu>
-            <item
-                android:id="@+id/nav_schools"
-                android:icon="@drawable/ic_schools_24dp"
-                android:title="@string/menu_schools"
-                />
-        </menu>
-    </item>
+    <!--<item android:title="Partners">-->
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:id="@+id/nav_schools"-->
+                <!--android:icon="@drawable/ic_schools_24dp"-->
+                <!--android:title="@string/menu_schools"-->
+                <!--/>-->
+        <!--</menu>-->
+    <!--</item>-->
 
     <item android:title="@string/app_name">
         <menu>
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_share_black_24dp"
-                android:title="@string/menu_share"
-                />
-            <item
-                android:id="@+id/nav_usefulLinks"
-                android:icon="@drawable/ic_http_black_24dp"
-                android:title="@string/menu_ext_links"
-                />
+            <!--<item-->
+                <!--android:id="@+id/nav_share"-->
+                <!--android:icon="@drawable/ic_share_black_24dp"-->
+                <!--android:title="@string/menu_share"-->
+                <!--/>-->
+            <!--<item-->
+                <!--android:id="@+id/nav_usefulLinks"-->
+                <!--android:icon="@drawable/ic_http_black_24dp"-->
+                <!--android:title="@string/menu_ext_links"-->
+                <!--/>-->
             <item
                 android:id="@+id/nav_logout"
                 android:icon="@drawable/ic_power_settings_new_black_24dp"

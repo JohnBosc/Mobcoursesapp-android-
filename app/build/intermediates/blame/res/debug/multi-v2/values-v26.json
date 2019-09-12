@@ -4,7 +4,7 @@
             "outputFile": "/home/jb/AndroidStudioProjects/mobcoursesapp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v26/values-v26.xml",
             "map": [
                 {
-                    "source": "/home/jb/.gradle/caches/transforms-2/files-2.1/60fd73a0e376d2469487b168fc58bf5c/res/values-v26/values-v26.xml",
+                    "source": "/home/jb/.gradle/caches/transforms-2/files-2.1/0eafa942263d5a7c6b967b087f0d1403/res/values-v26/values-v26.xml",
                     "from": {
                         "startLines": "2,3,4,8,12,16",
                         "startColumns": "4,4,4,4,4,4",

@@ -1,32 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="120dp"
-    android:layout_height="190dp"
+    xmlns:app="http://schemas.android.com/tools"
+    android:id="@+id/cardview_id"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
     xmlns:cardview="http://schemas.android.com/apk/res-auto"
     android:layout_margin="5dp"
-    cardview:cardCornerRadius="4dp">
+    cardview:cardCornerRadius="4dp"
+    app:ignore="NamespaceTypo">
 
 
     <LinearLayout
-        android:orientation="vertical"
+        android:orientation="horizontal"
+        android:background="@color/backgroundColor"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ImageView
+        <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/course_img_id"
-            android:layout_width="match_parent"
-            android:layout_height="160dp"
+            android:layout_width="60dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/course_circle"
+            android:layout_height="60dp"
             android:scaleType="centerCrop"
-            android:background="@color/colorText"/>
+            android:background="@drawable/course_circle"
+            >
 
-        <TextView
-            android:id="@+id/course_title_id"
-            android:textColor="@color/colorText"
-            android:textSize="13sp"
-            android:gravity="center"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Course title"/>
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/course_title_id"
+                android:textColor="@color/colorText"
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:textStyle="bold"
+                android:paddingTop="5dp"
+                android:fontFamily="@font/comfortaa"
+                android:background="@color/backgroundColor"
+                android:textAlignment="gravity"
+                android:justificationMode="inter_word"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Course title"/>
+            <TextView
+                android:id="@+id/course_author"
+                android:layout_below="@id/course_title_id"
+                android:textColor="@color/lightGrey"
+                android:textSize="10sp"
+                android:paddingLeft="2dp"
+                android:fontFamily="@font/comfortaa"
+                android:layout_marginVertical="2dp"
+                android:layout_alignParentLeft="true"
+                android:background="@color/backgroundColor"
+                android:layout_width="wrap_content"
+                android:justificationMode="inter_word"
+                android:layout_height="wrap_content"
+                android:text="Course Author"/>
+            <!--<TextView-->
+                <!--android:id="@+id/enroll"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:paddingHorizontal="10dp"-->
+                <!--android:fontFamily="@font/comfortaa"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:layout_marginBottom="5dp"-->
+                <!--android:background="#0088dd"-->
+                <!--android:textAllCaps="false"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:paddingVertical="5dp"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Enroll Now"/>-->
+            <!--<TextView-->
+                <!--android:id="@+id/detail"-->
+                <!--android:textColor="#0088dd"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:paddingHorizontal="10dp"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:layout_marginBottom="5dp"-->
+                <!--android:textAllCaps="false"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:paddingVertical="5dp"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Course details"/>-->
+        </RelativeLayout>
 
     </LinearLayout>
 

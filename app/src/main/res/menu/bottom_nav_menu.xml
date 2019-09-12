@@ -20,10 +20,10 @@
         android:title="@string/title_activity_mycourses"
         app:showAsAction="always"/>
 
-    <item
-        android:id="@+id/navigation_info"
-        android:icon="@drawable/ic_info_black"
-        android:title="@string/title_activity_info"
-        app:showAsAction="always"/>
+    <!--<item-->
+        <!--android:id="@+id/navigation_info"-->
+        <!--android:icon="@drawable/ic_info_black"-->
+        <!--android:title="@string/title_activity_info"-->
+        <!--app:showAsAction="always"/>-->
 
 </menu>

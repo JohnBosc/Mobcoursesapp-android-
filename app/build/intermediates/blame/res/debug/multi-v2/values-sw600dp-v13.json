@@ -4,7 +4,7 @@
             "outputFile": "/home/jb/AndroidStudioProjects/mobcoursesapp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
                 {
-                    "source": "/home/jb/.gradle/caches/transforms-2/files-2.1/60fd73a0e376d2469487b168fc58bf5c/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "source": "/home/jb/.gradle/caches/transforms-2/files-2.1/0eafa942263d5a7c6b967b087f0d1403/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/home/jb/.gradle/caches/transforms-2/files-2.1/e41fc75b8ff1742cb01d9d00737cf3fc/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "source": "/home/jb/.gradle/caches/transforms-2/files-2.1/1c4d5c4ae0f7af642ab329db4f4c93d8/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,10,11,12",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",

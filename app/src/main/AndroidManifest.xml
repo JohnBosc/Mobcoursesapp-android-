@@ -4,7 +4,8 @@
     package="com.finalyear.mobcoursesapp">
 
     <dist:module dist:instant="true" />
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -13,11 +14,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
-        <meta-data android:name="com.facebook.sdk.ApplicationId"
-            android:value="@string/facebook_application_id"/>
 
-        <activity android:name=".Authentication.ResetPassword"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_application_id" />
+
+        <activity
+            android:name=".Authentication.ResetPassword"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".ui.LoadActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
@@ -40,7 +44,7 @@
         <activity
             android:name=".ui.MainActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
 
         <meta-data
             android:name="preloaded_fonts"

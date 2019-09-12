@@ -153,6 +153,10 @@ attr chipStrokeColor
 attr chipStrokeWidth
 attr chipStyle
 attr circleCrop
+attr civ_border_color
+attr civ_border_overlay
+attr civ_border_width
+attr civ_circle_background_color
 attr closeIcon
 attr closeIconEnabled
 attr closeIconEndPadding
@@ -1069,6 +1073,7 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable edit_rounded
+drawable edit_rounded2
 drawable facebook
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
@@ -1200,6 +1205,7 @@ id bottom
 id btn_login
 id buttonPanel
 id cancel_action
+id cardview_id
 id center
 id center_horizontal
 id center_vertical
@@ -1217,8 +1223,10 @@ id container
 id content
 id contentPanel
 id coordinator
+id course_author
 id course_img_id
 id course_title_id
+id coursethumbnail
 id custom
 id customPanel
 id dark
@@ -1237,6 +1245,7 @@ id edit_query
 id email
 id end
 id end_padder
+id enroll_now
 id enrolled_courses
 id enrolled_label
 id enterAlways
@@ -1248,13 +1257,13 @@ id fill
 id fill_horizontal
 id fill_vertical
 id filled
-id filter
 id first
 id fixed
 id forever
 id fragment_container
 id fullname
 id ghost_view
+id glide_custom_view_target_tag
 id goToSignUp
 id gone
 id group_divider
@@ -1275,12 +1284,9 @@ id label1
 id label2
 id label3
 id label5
-id label_author
 id label_dashboard1
 id label_dashboard2
 id label_dashboard3
-id label_date
-id label_pdf
 id label_search
 id labeled
 id largeLabel
@@ -1299,24 +1305,16 @@ id middle
 id mini
 id mob
 id modify_pass
-id more_pdf
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
 id name
-id nav_certifs
 id nav_dashboard
-id nav_help
 id nav_logout
-id nav_profile
-id nav_schools
-id nav_share
-id nav_usefulLinks
 id nav_view
 id nav_view_bottom
 id navigation_catalogue
 id navigation_header_container
-id navigation_info
 id navigation_mycourses
 id navigation_search
 id never
@@ -1335,7 +1333,6 @@ id parentPanel
 id parent_matrix
 id pass_modify_label
 id password
-id pdf_icon
 id percent
 id phone
 id pin
@@ -1401,6 +1398,7 @@ id status_bar_latest_event_content
 id stretch
 id submenuarrow
 id submit_area
+id swiperefresh
 id tabMode
 id tag_transition_group
 id tag_unhandled_key_event_manager
@@ -1437,6 +1435,11 @@ id transition_scene_layoutid_cache
 id transition_transform
 id tutorial_courses
 id tutorial_label
+id txtCat
+id txtDesc
+id txtDetails
+id txtRequirements
+id txttitle
 id uniform
 id unlabeled
 id up
@@ -1521,6 +1524,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
 layout fragment_catalog
+layout fragment_course
 layout fragment_dashboard
 layout fragment_help
 layout fragment_info
@@ -2207,6 +2211,7 @@ styleable ButtonBarLayout allowStacking
 styleable CardView android_minWidth android_minHeight cardBackgroundColor cardCornerRadius cardElevation cardMaxElevation cardPreventCornerOverlap cardUseCompatPadding contentPadding contentPaddingBottom contentPaddingLeft contentPaddingRight contentPaddingTop
 styleable Chip android_textAppearance android_ellipsize android_maxWidth android_text android_checkable checkedIcon checkedIconEnabled checkedIconVisible chipBackgroundColor chipCornerRadius chipEndPadding chipIcon chipIconEnabled chipIconSize chipIconTint chipIconVisible chipMinHeight chipStartPadding chipStrokeColor chipStrokeWidth closeIcon closeIconEnabled closeIconEndPadding closeIconSize closeIconStartPadding closeIconTint closeIconVisible hideMotionSpec iconEndPadding iconStartPadding rippleColor showMotionSpec textEndPadding textStartPadding
 styleable ChipGroup checkedChip chipSpacing chipSpacingHorizontal chipSpacingVertical singleLine singleSelection
+styleable CircleImageView civ_border_color civ_border_overlay civ_border_width civ_circle_background_color
 styleable CollapsingToolbarLayout collapsedTitleGravity collapsedTitleTextAppearance contentScrim expandedTitleGravity expandedTitleMargin expandedTitleMarginBottom expandedTitleMarginEnd expandedTitleMarginStart expandedTitleMarginTop expandedTitleTextAppearance scrimAnimationDuration scrimVisibleHeightTrigger statusBarScrim title titleEnabled toolbarId
 styleable CollapsingToolbarLayout_Layout layout_collapseMode layout_collapseParallaxMultiplier
 styleable ColorStateListItem android_color android_alpha alpha
